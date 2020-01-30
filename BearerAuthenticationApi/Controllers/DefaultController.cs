@@ -6,11 +6,13 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace BearerAuthenticationApi.Controllers
 {
+    [Route("api")]
     public class DefaultController : Controller
     {
+        [Route("testefumaca")]
         public IActionResult Index()
         {
-            return View();
+            return Ok("foi");
         }
     }
 }
